@@ -74,7 +74,7 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <strong><font size="+6">Deep RL at Scale: </br> Sorting Waste in Office Buildings with a Fleet of Mobile Manipulators </font></strong> </br> 
+                <strong><font size="+6">Deep RL at Scale: </br> Sorting Waste in Office Buildings </br>with a Fleet of Mobile Manipulators </font></strong> </br> 
                 <!--<small>
                     CoRL 2021
                 </small>-->
@@ -85,11 +85,11 @@
                 <ul class="list-inline">
                 <br>
                 <li>Alexander Herzog*&dagger;</li> <li>Kanishka Rao*&Dagger;</li> <li>Karol Hausman*&Dagger;</li> <li>Yao Lu*&Dagger;</li> <li>Paul Wohlhart*&dagger;</li> <br>
-                <li>Mengyuan Yan&dagger;</li> <li>Jessica Lin&dagger;</li> <li>Montserrat Gonzalez Arenas&Dagger;</li> <li>Ted Xiao&Dagger;</li> <li>Daniel Kappler&dagger;</li> <li>Daniel Ho&dagger;</li> <li>Jarek Rettinghouse&dagger;</li> <br>
-                <li>Yevgen Chebotar&Dagger;</li> <li>Kuang-Huei Lee&Dagger;</li> <li>Keerthana Gopalakrishnan&Dagger;</li> <li>Ryan Julian&Dagger;</li> <li>Adrian Li&dagger;</li> <li>Chuyuan Kelly Fu&dagger;</li> <li>Bob Wei&dagger;</li> <br>
-                <li>Sangeetha Ramesh&dagger;</li> <li>Khem Holden&Dagger;</li> <li>Kim Kleiven&dagger;</li> <li>David Rendleman&Dagger;</li> <li>Sean Kirmani&dagger;</li> <li>Jeff Bingham&dagger;</li> <li>Jon Weisz&dagger;</li> <br>
-                <li>Ying Xu&dagger;</li> <li>Wenlong Lu&dagger;</li> <li>Matthew Bennice&dagger;</li> <li>Cody Fong&dagger;</li> <li>David Do&dagger;</li> <li>Jessica Lam&dagger;</li> <li>Noah Brown&Dagger;</li> <br>
-                 <li>Mrinal Kalakrishnan&dagger;</li> <li>Julian Ibarz&Dagger;</li> <li>Peter Pastor&dagger;</li> <li>Sergey Levine&Dagger;</li> <br>
+                <li>Mengyuan Yan&dagger;</li> <li>Jessica Lin&dagger;</li> <li>Montserrat Gonzalez Arenas&Dagger;</li> <li>Ted Xiao&Dagger;</li> <li>Daniel Kappler&dagger;</li> <li>Daniel Ho&dagger;</li> <br> 
+                <li>Jarek Rettinghouse&dagger;</li> <li>Yevgen Chebotar&Dagger;</li> <li>Kuang-Huei Lee&Dagger;</li> <li>Keerthana Gopalakrishnan&Dagger;</li> <li>Ryan Julian&Dagger;</li> <li>Adrian Li&dagger;</li> <br>
+               <li>Chuyuan Kelly Fu&dagger;</li> <li>Bob Wei&dagger;</li> <li>Sangeetha Ramesh&dagger;</li> <li>Khem Holden&Dagger;</li> <li>Kim Kleiven&dagger;</li> <li>David Rendleman&Dagger;</li> <br>
+                <li>Sean Kirmani&dagger;</li> <li>Jeff Bingham&dagger;</li> <li>Jon Weisz&dagger;</li> <li>Ying Xu&dagger;</li> <li>Wenlong Lu&dagger;</li> <li>Matthew Bennice&dagger;</li> <li>Cody Fong&dagger;</li> <li>David Do&dagger;</li>  <br>
+                <li>Jessica Lam&dagger;</li> <li>Noah Brown&Dagger;</li> <li>Mrinal Kalakrishnan&dagger;</li> <li>Julian Ibarz&Dagger;</li> <li>Peter Pastor&dagger;</li> <li>Sergey Levine&Dagger;</li> <br>
                 <br>
 			*Authors with equal contribution
             <br>
@@ -105,7 +105,7 @@
                 <ul class="nav nav-pills nav-justified">
                     <li>
                         <a href="assets/rl_at_scale.pdf">
-                        <image src="img/paper_small2.png" height="60px">
+                        <image src="img/paper.png" height="60px">
                             <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
@@ -134,42 +134,164 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <br>
+                 <p style="text-align:center;">
+            	    <video id="arch" width="100%" playsinline="" autoplay="" muted="" loop="">
+                           <source src="videos/sort_at_rls_1440x810.mp4" type="video/mp4">
+                       </video>
+                </p>
                 <h3>
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    Abstract—We describe a system for deep reinforcement learn-
-                    ing of robotic manipulation skills applied to a large-scale real-
-                    world task: sorting recyclables and trash in office buildings.                    
-                    Real-world deployment of deep RL policies requires not only
-                    effective training algorithms, but the ability to bootstrap real-
-                    world training and enable broad generalization. To this end,
-                    our system combines scalable deep RL from real-world data
-                    with bootstrapping from training in simulation, and incorporates
-                    auxiliary inputs from existing computer vision systems as a
-                    way to boost generalization to novel objects, while retaining
-                    the benefits of end-to-end training.
-                   We analyze the tradeoffs of
-                   different design decisions in our system, and present a large-scale
-                   empirical validation that includes training on real-world data
-                   gathered over the course of 24 months of experimentation, across
-                   a fleet of 23 robots in three office buildings, with a total training
-                   set of 9527 hours of robotic experience. Our final validation
-                   also consists of 4800 evaluation trials across 240 waste station
-                   configurations, in order to evaluate in detail the impact of the
-                   design decisions in our system, the scaling effects of including
-                   more real-world data, and the performance of the method on
-                   novel objects.
+                   We describe a system for deep reinforcement learning of robotic manipulation skills applied to a large-scale real-world task: sorting recyclables and trash in office buildings. Real-world deployment of deep RL policies requires not only effective training algorithms, but the ability to bootstrap real-world training and enable broad generalization. To this end, our system combines scalable deep RL from real-world data with bootstrapping from training in simulation, and incorporates auxiliary inputs from existing computer vision systems as a way to boost generalization to novel objects, while retaining the benefits of end-to-end training.
+                   We analyze the tradeoffs of different design decisions in our system, and present a large-scale empirical validation that includes training on real-world data gathered over the course of 24 months of experimentation, across a fleet of 23 robots in three office buildings, with a total training set of 9527 hours of robotic experience. Our final validation also consists of 4800 evaluation trials across 240 waste station configurations, in order to evaluate in detail the impact of the design decisions in our system, the scaling effects of including more real-world data, and the performance of the method on novel objects.
                 </p>
-
-             <p style="text-align:center;">
-                <video id="v0" width="100%" playsinline autoplay muted loop>
-                   <source src="videos/sorty_task_animation.mp4" type="video/mp4">
-               </video>
             </div>
         </div>   
 
+    	<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xyvdGlvwSDE" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Problem Setup
+                </h3>
+                The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+                <p style="text-align:center;">
+                <video id="v0" width="100%" playsinline autoplay muted loop>
+                   <source src="videos/sorty_task_animation.mp4" type="video/mp4">
+               </video>
+               </p>
+		<p class="text-justify">
+To test RT-1 in the real world, we collected a large dataset of real-world robotic experiences that consists of over 130k episodes, which contain over 700 tasks, and was collected with a fleet of 13 robots over 17 months.
+<br><br>
+The current set of skills includes picking, placing, opening and closing drawers, getting items in and out drawers, placing elongated items up-right, knocking them over, pulling napkins and opening jars. 
+The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+            </div>
+        </div>
+        
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Bootstrapping
+                </h3>
+          <p style="text-align:center;">
+        	    <image src="img/flywheel.png" class="img-responsive">        	   
+         </p>          
+
+                
+                The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+                <p style="text-align:center;">
+                <video id="v0" width="100%" playsinline autoplay muted loop>
+                   <source src="videos/sorty_sim_to_real.mp4" type="video/mp4">
+               </video>
+               </p>
+		<p class="text-justify">
+To test RT-1 in the real world, we collected a large dataset of real-world robotic experiences that consists of over 130k episodes, which contain over 700 tasks, and was collected with a fleet of 13 robots over 17 months.
+                <p style="text-align:center;">
+                <video id="v0" width="100%" playsinline autoplay muted loop>
+                   <source src="videos/classrooms_wide.mp4" type="video/mp4">
+               </video>
+               </p>
+To test RT-1 in the real world, we collected a large dataset of real-world robotic experiences that consists of over 130k episodes, which contain over 700 tasks, and was collected with a fleet of 13 robots over 17 months.
+                <p style="text-align:center;">
+                <video id="v0" width="100%" playsinline autoplay muted loop>
+                   <source src="videos/sorty_wild_collage_flat.mp4" type="video/mp4">
+               </video>
+               </p>                              
+               
+<br><br>
+
+The current set of skills includes picking, placing, opening and closing drawers, getting items in and out drawers, placing elongated items up-right, knocking them over, pulling napkins and opening jars. 
+The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+            </div>
+        </div>
+                
+                
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method
+                </h3>
+          <p style="text-align:center;">
+        	    <image src="img/architecture.png" class="img-responsive">        	   
+         </p>          
+
+                
+                The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+To test RT-1 in the real world, we collected a large dataset of real-world robotic experiences that consists of over 130k episodes, which contain over 700 tasks, and was collected with a fleet of 13 robots over 17 months.
+To test RT-1 in the real world, we collected a large dataset of real-world robotic experiences that consists of over 130k episodes, which contain over 700 tasks, and was collected with a fleet of 13 robots over 17 months.
+               
+<br><br>
+The current set of skills includes picking, placing, opening and closing drawers, getting items in and out drawers, placing elongated items up-right, knocking them over, pulling napkins and opening jars. 
+The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+          <p style="text-align:center;">
+        	    <image src="img/classroom-eval.png" class="img-responsive">        	   
+         </p>          
+
+                
+                The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+To test RT-1 in the real world, we collected a large dataset of real-world robotic experiences that consists of over 130k episodes, which contain over 700 tasks, and was collected with a fleet of 13 robots over 17 months.
+To test RT-1 in the real world, we collected a large dataset of real-world robotic experiences that consists of over 130k episodes, which contain over 700 tasks, and was collected with a fleet of 13 robots over 17 months.
+
+          <p style="text-align:center;">
+        	    <image src="img/classroom-result.png" class="img-responsive">        	   
+         </p>          
+               
+<br><br>
+The current set of skills includes picking, placing, opening and closing drawers, getting items in and out drawers, placing elongated items up-right, knocking them over, pulling napkins and opening jars. 
+          <p style="text-align:center;">
+        	    <image src="img/deployment.png" class="img-responsive">        	   
+         </p>   
+The list of instructions was designed to show multiple skills with many objects to test aspects of RT-1 such as generalization to new instructions and ability to perform many skills. 
+The entire process of adding tasks and data is described in detail in the paper.
+    <p style="text-align:center;">
+        	    <image src="img/diverse.png" class="img-responsive">        	   
+    </p>
+
+Since we do not make any assumptions about particular skills when adding new instructions, the system is easily extendable, and we can continuously provide more diverse data to improve its capabilities.
+            </div>
+        </div>
+             
+
+           
 
 	<!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -186,29 +308,23 @@
 
 
 
-         <!-- <div class="row">
+         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Citation 
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-@inproceedings{herzog2023rlscale,
-    title={Deep RL at Scale: Sorting Waste in Office Buildings with a Fleet of Mobile Manipulators},
-    author={Alexander Herzog and Kanishka Rao and Karol Hausman and Yao Lu and Paul Wohlhart and Mengyuan Yan and
-        Jessica Lin and Montserrat Gonzalez Arenas and Ted Xiao and Daniel Kappler and Daniel Ho and
-        Jarek Rettinghouse and Yevgen Chebotar and Kuang-Huei Lee and Keerthana Gopalakrishnan and Ryan Julian and
-        Adrian Li and Chuyuan Kelly Fu and Bob Wei and Sangeetha Ramesh and Khem Holden and Kim Kleiven and
-        David Rendleman and Sean Kirmani and Jeff Bingham and Jon Weisz and Ying Xu and Wenlong Lu and
-        Matthew Bennice and Cody Fong and David Do and Jessica Lam and Noah Brown and Mrinal Kalakrishnan and
-        Julian Ibarz and Peter Pastor and Sergey Levine},
-    booktitle={Robotics: Science and Systems (RSS)},
-    year={2023}
+@inproceedings{rt12022arxiv,
+    title={RT-1: Robotics Transformer for Real-World Control at Scale},
+    author={Anthony	Brohan and  Noah Brown and  Justice Carbajal and  Yevgen Chebotar and  Joseph Dabis and  Chelsea Finn and  Keerthana Gopalakrishnan and  Karol Hausman and  Alex Herzog and  Jasmine Hsu and  Julian Ibarz and  Brian Ichter and  Alex Irpan and  Tomas Jackson and  Sally Jesmonth and  Nikhil Joshi and  Ryan Julian and  Dmitry Kalashnikov and  Yuheng Kuang and  Isabel Leal and  Kuang-Huei Lee and  Sergey Levine and  Yao Lu and  Utsav Malla and  Deeksha Manjunath and  Igor Mordatch and  Ofir Nachum and  Carolina Parada and  Jodilyn Peralta and  Emily Perez and  Karl Pertsch and  Jornell Quiambao and  Kanishka Rao and  Michael Ryoo and  Grecia Salazar and  Pannag Sanketi and  Kevin Sayed and  Jaspiar Singh and  Sumedh Sontakke and  Austin Stone and  Clayton Tan and  Huong Tran and  Vincent Vanhoucke and Steve Vega and  Quan Vuong and  Fei Xia and  Ted Xiao and  Peng Xu and  Sichun Xu and  Tianhe Yu and  Brianna Zitkovich},
+    booktitle={arXiv preprint arXiv:2212.06817},
+    year={2022}
 }</textarea>
                 </div>
             </div>
              
-        </div> -->
+        </div>
 
 
          <!-- <div class="row">
@@ -228,9 +344,7 @@
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                    The authors would like to thank Mohi Khansari, Cameron Tuckerman, Stanley Soo, Benjie Holson, Justin Vincent, 
-                    Mario Prats, Thomas Buschmann, Michael Quinlan, Yunfei Bai, Joséphine Simon, Jarrett Lee, Kalpesh Kuber, 
-                    Meghha Dhoke, Christian Bodner and Russell Wong for their help and support in various aspects of the project.
+                    The authors would like to thank Mohi Khansari, Cameron Tuckerman, Stanley Soo, Benjie Holson, Justin Vincent, Mario Prats, Thomas Buschmann, Michael Quinlan, Yunfei Bai, Joséphine Simon, Jarrett Lee, Kalpesh Kuber, Meghha Dhoke, Christian Bodner and Russell Wong for their help and support in various aspects of the project.
                     <br><br>
                 The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
                 </p>
