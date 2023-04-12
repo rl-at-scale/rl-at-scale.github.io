@@ -252,19 +252,19 @@ We train this model using Deep RL, which allows us to not only distill the best 
         	    <image src="img/classroom-eval.png" class="img-responsive">        	   
          </p>          
 
-The final system could accurately sort about 84% of the objects on average, with performance increasing steadily as more data was added. 
+The final system could accurately sort about 84% of the objects on average, with performance increasing steadily as more data was added. We performed an ablation study to understand how our design decisions contribute to the final performance as seen in the next graph.  
           <p style="text-align:center;">
         	    <image src="img/classroom-result.png" class="img-responsive">        	   
          </p>          
-               
-In the real world, we logged statistics from three real-world deployments between 2021 and 2022, and found that our system could reduce contamination in the waste bins by between 40% and 50% by weight. 
-          <p style="text-align:center;">
-        	    <image src="img/deployment.png" class="img-responsive">        	   
-         </p>   
+  
 Lastly, one of the most challenging aspects of this problem was the diversity of data encountered in the real office buildings. We present a few examples with a variety of situations with unique objects from real office buildings below.<br><br>
     <p style="text-align:center;">
         	    <image src="img/diverse.png" class="img-responsive">        	   
     </p>
+    In the real world, we logged statistics from three real-world deployments between 2021 and 2022, and found that our system could reduce contamination in the waste bins by between 40% and 50% despite the challenging out-of-distribution scenarios. 
+    <p style="text-align:center;">
+          <image src="img/deployment.png" class="img-responsive">        	   
+   </p> 
 Our paper provides further insights on the technical design, ablations studying various design decisions, and more detailed statistics on the experiments.
             </div>
         </div>
